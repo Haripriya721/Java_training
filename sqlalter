@@ -7,3 +7,17 @@ ALTER TABLE jobs
     -> MODIFY COLUMN min_salary DECIMAL(10, 2) DEFAULT 8000,
     -> MODIFY COLUMN max_salary DECIMAL(10, 2) DEFAULT NULL;
 ALTER TABLE countries modify column country_id int unique auto_increment;
+
+
+
+
+
+Create Table Student_Marks, where ID is unique and name, marks and age as columns.
+•	Insert 10 records to the table.
+•	Delete record where NAME is Ram.
+•	Update marks=92 in tuple where ID is 1
+•	update the table with new columns lastname and address.
+•	Modify the column marks from int datatype to float data type and add the constraint NOT NULL.
+•	Rename the column id column to student_id.
+•	Modify the constraint unique for student_id to Primary key
+•	Rename the table to student.
