@@ -1,0 +1,13 @@
+create database school;
+use school
+insert into student_marks values(103,'Abishek',97,16),(11,'Kavya',45,15),(23,'rahul',57,17),
+(67,'reshma',89,16),(104,'Gouri',95,15),(43,'Pallavi',92,16),
+(45,'Chaithra',97,16),(1,'Raju',93,16),(27,'Ram',64,16);
+DELETE FROM student_marks where Name='Ram';
+update student_marks set Marks=92 where ID=1;
+ALTER TABLE student_marks ADD Last_name varchar(10);
+ALTER TABLE student_marks ADD address varchar(50);
+alter table student_marks modify column Marks FLOAT NOT NULL;
+alter table student_marks change column ID student_id int;
+alter table student_marks modify column student_id int primary key;
+alter table student_marks rename to Student;
