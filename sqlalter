@@ -12,12 +12,10 @@ ALTER TABLE countries modify column country_id int unique auto_increment;
 
 
 
-Create Table Student_Marks, where ID is unique and name, marks and age as columns.
-•	Insert 10 records to the table.
-•	Delete record where NAME is Ram.
-•	Update marks=92 in tuple where ID is 1
-•	update the table with new columns lastname and address.
-•	Modify the column marks from int datatype to float data type and add the constraint NOT NULL.
-•	Rename the column id column to student_id.
-•	Modify the constraint unique for student_id to Primary key
-•	Rename the table to student.
+1.	Write a SQL statement to create a simple table countries including columns country_id,country_name and region_id.
+2.	Write a SQL statement to create a table named jobs including columns job_id, job_title, min_salary, max_salary and check whether the max_salary amount exceeding the upper limit 25000.
+3.	Write a SQL statement to create a table named countries including columns country_id, country_name and region_id and make sure that no countries except Italy, India and China will be entered in the table.
+4.	Write a SQL statement to create a table named countries including columns country_id,country_name and region_id and make sure that no duplicate data against column country_id will be allowed at the time of insertion.
+5.	Write a SQL statement to create a table named jobs including columns job_id, job_title, min_salary and max_salary, and make sure that, the default value for job_title is blank and min_salary is 8000 and max_salary is NULL will be entered automatically at the time of insertion if no value assigned for the specified columns.
+6.	Write a SQL statement to create a table named countries including columns country_id, country_name and region_id and make sure that the country_id column will be a key field which will not contain any duplicate data at the time of insertion.
+7.	Write a SQL statement to create a table countries including columns country_id, country_name and region_id and make sure that the column country_id will be unique and store an auto incremented value.
