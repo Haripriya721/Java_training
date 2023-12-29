@@ -1,0 +1,9 @@
+create table countries(country_id int,country_name varchar(20),region_id int );
+create table jobs(job_id int,job_title varchar(20),min_salary int,max_salary int CHECK (max_salary <= 25000));
+ ALTER TABLE countries ADD CHECK (country_name IN ('Italy', 'India', 'China'));
+ ALTER TABLE countries modify column country_id int unique;
+ALTER TABLE jobs
+    -> MODIFY COLUMN job_title VARCHAR(100) DEFAULT '',
+    -> MODIFY COLUMN min_salary DECIMAL(10, 2) DEFAULT 8000,
+    -> MODIFY COLUMN max_salary DECIMAL(10, 2) DEFAULT NULL;
+ALTER TABLE countries modify column country_id int unique auto_increment;
